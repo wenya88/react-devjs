@@ -1,0 +1,31 @@
+  
+  @import '../../../utils/common.scss';
+  .ant-layout-sider{
+    background: #26292d;
+    color:#c6c9ca;
+  }
+  .ant-layout-header{
+    background:#fff;
+    height:46px;
+    line-height:46px;
+    border-bottom:1px solid $d-eight;
+    padding-left:5px;
+  }
+  .ant-lay-content{
+    background:#f4f3f3;
+  }
+  .ant-menu-dark{
+    background: none;
+  }
+  .logo{
+    height:46px;
+    line-height:46px;
+    padding-left:20px;
+    font-size:20px;
+    font-weight:lighter;
+    border-bottom:1px solid $d-eight;
+    background:#000;
+  }
+  :global(.ant-menu.ant-menu-dark .ant-menu-item-selected){
+      background-color:#36a3ff;
+  }

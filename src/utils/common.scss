@@ -1,0 +1,7 @@
+$d-eight:#d8d8d8;
+.divw{
+    color:red;
+    &>span{
+        color:blue;
+    }
+}
