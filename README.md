@@ -1,7 +1,7 @@
 # dva.js-cli
 
-#### npm install
 ##### 安装插件
+#### npm install
 
-#### npm start
 ##### 启动项目
+#### npm start
