@@ -1,7 +1,5 @@
 # dva.js-cli
 
-#### Description
-
 ##### 初始化项目
 npm install
 
