@@ -1,31 +1,95 @@
-  
   @import '../../../utils/common.scss';
-  .ant-layout-sider{
+
+  .ant-layout-sider {
     background: #26292d;
-    color:#c6c9ca;
+    color: #c6c9ca;
   }
-  .ant-layout-header{
-    background:#fff;
-    height:46px;
-    line-height:46px;
-    border-bottom:1px solid $d-eight;
-    padding-left:5px;
+
+  .ant-layout-header {
+    background: #fff;
+    height: 46px;
+    line-height: 46px;
+    border-bottom: 1px solid $d-eight;
+    padding-left: 5px;
   }
-  .ant-lay-content{
-    background:#f4f3f3;
+
+  .ant-lay-content {
+    background: white;
   }
-  .ant-menu-dark{
+
+  .ant-menu-dark {
     background: none;
   }
-  .logo{
-    height:46px;
-    line-height:46px;
-    padding-left:20px;
-    font-size:20px;
-    font-weight:lighter;
-    border-bottom:1px solid $d-eight;
-    background:#000;
+
+  .logo {
+    height: 46px;
+    line-height: 46px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    border-bottom: 1px solid #000;
+    background: #000;
+
+    .myIcon {
+      font-size: 26px;
+      color: #fff;
+      margin-right: 6px;
+      // -webkit-transition: all 1.5s ease;
+      // transition: all 1.5s ease;
+      -webkit-animation: Glow 1s ease infinite alternate;
+      animation: Glow 1s ease infinite alternate;
+     
+    }
+
+    @-webkit-keyframes Glow {
+      from {
+        text-shadow: 0 0 12px #fff,
+          0 0 20px #fff,
+          0 0 30px #fff,
+          0 0 40px #36a3ff,
+          0 0 70px #36a3ff,
+          0 0 80px #36a3ff,
+          0 0 100px #36a3ff,
+          0 0 150px #36a3ff;
+      }
+
+      to {
+        text-shadow: 0 0 0px #fff,
+          0 0 10px #fff,
+          0 0 15px #fff,
+          0 0 20px #36a3ff,
+          0 0 35px #36a3ff,
+          0 0 40px #36a3ff,
+          0 0 50px #36a3ff,
+          0 0 75px #36a3ff;
+      }
+    }
+
+    @keyframes Glow {
+      from {
+        text-shadow: 0 0 12px #fff,
+          0 0 20px #fff,
+          0 0 30px #fff,
+          0 0 40px #36a3ff,
+          0 0 70px #36a3ff,
+          0 0 80px #36a3ff,
+          0 0 100px #36a3ff,
+          0 0 150px #36a3ff;
+      }
+
+      to {
+        text-shadow: 0 0 0px #fff,
+          0 0 10px #fff,
+          0 0 15px #fff,
+          0 0 20px #36a3ff,
+          0 0 35px #36a3ff,
+          0 0 40px #36a3ff,
+          0 0 50px #36a3ff,
+          0 0 75px #36a3ff;
+      }
+    }
   }
-  :global(.ant-menu.ant-menu-dark .ant-menu-item-selected){
-      background-color:#36a3ff;
+
+  :global(.ant-menu.ant-menu-dark .ant-menu-item-selected) {
+    background-color: #36a3ff;
   }

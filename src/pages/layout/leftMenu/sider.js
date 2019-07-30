@@ -4,7 +4,10 @@ import styles from '../style/IndexPage.scss'
 import { connect } from 'dva';
 import { Link } from 'dva/router'
 
+// import { IconFont } from '../../../utils/common.js'
+
 const { Sider } = Layout;
+
 // const { SubMenu } = Menu;
 
 // 左侧主菜单
@@ -14,7 +17,7 @@ class sider extends Component {
         this.state = {
             menu: [
                 { name: "首页", icon: "desktop", id: "home", path: "/home" },
-                { name: "登陆", icon: "appstore", id: "setup", path: "/setup" },
+                { name: "设置", icon: "appstore", id: "setup", path: "/setup" },
                 { name: "其他", icon: "pie-chart", id: "other", path: "/other" }
             ],
             defalutkey: [] //默认菜单KEY
@@ -41,9 +44,12 @@ class sider extends Component {
             <div>
                 <Sider className={styles['ant-layout-sider']} style={{ 'height': window.innerHeight + 'px' }} collapsed={collapsed}>
                     <div className={styles.logo}>
-                        <Icon type="loading" style={{ marginRight: '10px' }} />
-                        <span>
-                            {!collapsed ? 'REACT_V1.0' : ''}
+                        {/* 引入自定义阿里图标库 
+                            <IconFont type="icon-qukuailianwangluo" className={styles.myIcon} />
+                        */}
+                        <i className={`${styles.myIcon} ${styles.iconfont}`}>&#xe600;</i>
+                        <span >
+                            {!collapsed ? 'CCN-CLOUD' : ''}
                         </span>
                     </div>
                     <Menu
@@ -56,7 +62,7 @@ class sider extends Component {
                         style={{ 'margin': '0px' }}
                     >
                         {
-                            menu.map(({ name, icon, id, path }) => (
+                            menu.map(({ name, icon, id, path }, i) => (
                                 <Menu.Item key={id}>
                                     <Link to={path} replace>
                                         <Icon type={icon} />

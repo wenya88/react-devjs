@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 import { Router, Switch } from 'dva/router';
 
 import routerConfig from './utils/router';
 import SubRoutes from './utils/subRoutes'
 
-function RouterConfig({ history,app }) {
+
+function RouterConfig({ history, app }) {
   return (
     <Router history={history}>
       <Switch>
-        {/* <Route path="/" exact component={IndexPage} /> */}
         {
-          routerConfig.map((route,i)=>(
-            <SubRoutes key={i} {...route} app={app} />
+          routerConfig.map((route, i) => (
+             <SubRoutes key={i} {...route} app={app} />
           ))
         }
       </Switch>
@@ -20,3 +20,6 @@ function RouterConfig({ history,app }) {
 }
 
 export default RouterConfig;
+
+
+

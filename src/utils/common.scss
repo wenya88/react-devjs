@@ -1,7 +1,31 @@
+// 引入阿里图标库-在线
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1318207 */
+  src: url('//at.alicdn.com/t/font_1318207_rjpf0eq7l3.eot');
+  src: url('//at.alicdn.com/t/font_1318207_rjpf0eq7l3.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1318207_rjpf0eq7l3.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1318207_rjpf0eq7l3.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1318207_rjpf0eq7l3.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1318207_rjpf0eq7l3.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 $d-eight:#d8d8d8;
-.divw{
-    color:red;
-    &>span{
-        color:blue;
-    }
+
+.divw {
+  color: red;
+
+  &>span {
+    color: blue;
+  }
 }
